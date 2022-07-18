@@ -4,6 +4,11 @@
 # Python: Environment
 py_env/
 
+# Exercise 0
+**/airflow_project/airflow.cfg
+**/airflow_project/airflow.db
+**/airflow_project/webserver_config.py
+
 # Airflow
 **/logs/*
 __pycache__/
