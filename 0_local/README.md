@@ -1,12 +1,12 @@
-# This repo
+# This exercise goal
 
-July 16, 2022. This [Back to main](../README.md)
+July 18, 2022. This [Back to main](../README.md)
 
-The purpose of this exercise is to install all the tools locally (on-premise) and
-run a DAG that creates a table in a PostgreSQL database and ingest data from a
-CSV file.
+The purpose of this exercise is to install all the tools locally (on-premise) and run a DAG that creates a table in a PostgreSQL database and ingest data from a CSV file.
 
 The DAG will ingest a portion of the CSV (a number of rows from a given row index).
+
+For this exercise, once you have Airflow up and running, copy the dags folder inside `0_local/airflow_project/dags` (including `sql` subfolder) inside `~/airflow/`. Run the DAG in Airflow, and verify the PostgreSQL database has the ingested CSV records.
 
 # Installation on Ubuntu 22.04
 
@@ -18,7 +18,7 @@ The DAG will ingest a portion of the CSV (a number of rows from a given row inde
 | Ubuntu | Python | 3.10.4 | [Instructions](#UbuntuPython) |
 | Ubuntu | PostgreSQL, PGAdmin4 | 14.4, 6.11 | [Instructions](#UbuntuPostgreSQL) |
 | Ubuntu | Docker, docker-compose | 20.10.17, 1.29.2 | [Instructions](#UbuntuDocker) |
-| Ubuntu | Airflow (locally) | 2.3.2 | [Instructions](#UbuntuAirflow) |
+| Ubuntu | Airflow (locally) | 2.3.3 | [Instructions](#UbuntuAirflow) |
 
 
 ## <a name="UbutuChrome"></a>Chrome (optional)
@@ -253,3 +253,5 @@ To configure Database connection, follow the steps:
    ***Port:*** (Postgres default port is 5432)
 
 Now you are ready to place your dags inside $AIRFLOW_HOME/dags/ directory (`~/airflow/dags/`).
+
+For this exercise, once you have Airflow up and running, copy the dags folder inside `0_local/airflow_project/dags` (including `sql` subfolder) inside `~/airflow/`. Run the DAG in Airflow, and verify the PostgreSQL database has the ingested CSV records.
